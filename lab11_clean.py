@@ -22,7 +22,7 @@ with st.form("input form"):
 
     # TODO 2: Ask for user input by creating number inputs/sliders. (Please remove the None values!)
     # You may define max/min values to restrict the valid range.
-    labs_attended = st.number_input("Number of labs attended (max 12)", min_value=0, max_value=12, step=1)
+    labs_attended = st.number_input("Number of labs attended (max 12)", min_value=0, max_value=12, format="int")
     asm1_score = st.slider("Assignment 1 score (out of 100)", 0, 100, 0)
     asm2_score = st.slider("Assignment 2 score (out of 100)", 0, 100, 0)
     final_score = st.slider("Final exam score (out of 100)", 0, 100, 0)
